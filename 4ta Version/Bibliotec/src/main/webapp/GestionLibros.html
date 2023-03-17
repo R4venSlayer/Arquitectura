@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biblioteca - Agregar libros</title>
+</head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script type="text/javascript" src="JavaScript/Libros.js"></script>
+<body>
+
+	<h2>Agregar libros</h2>
+	Nombre del libro:
+	<input type="text" id="campoA">
+	<br> Autor:
+	<input type="text" id="campoB">
+	<br> Id:
+	<input type="text" id="campoC">
+	<br> Categoría:
+	<input type="text" id="campoD">
+	<br> Cantidad:
+	<input type="text" id="campoE">
+	<br> Url:
+	<input type="text" id="campoF">
+	<br>
+
+	<button onclick="crearLibro()">agregar</button>
+
+
+	<div id="respuesta">
+
+		<table>
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Autor</th>
+					<th>ID</th>
+					<th>Categoría</th>
+					<th>Cantidad</th>
+					<th>URL</th>
+				</tr>
+			</thead>
+			<tbody id="bodyTabla">
+			</tbody>
+		</table>
+
+	</div>
+
+	<h2>Eliminar libros</h2>
+	Nombre del libro:
+	<input type="text" id="nombreD">
+	<br>
+
+	<button onclick="eliminarLibro()">Eliminar</button>
+	<div id="respuestaEliminar"></div>
+
+
+</body>
+
+
+</html>
